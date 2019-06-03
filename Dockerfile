@@ -8,8 +8,8 @@ ENV PTTRACKER_VERSION ${PTTRACKER_VERSION}
 RUN mkdir -p /app
 WORKDIR /app
 
-RUN wget https://github.com/bTayFla/PtTracker/releases/download/$PTTRACKER_VERSION/PtTracker.v$PTTRACKER_VERSION.Linux.zip
-RUN unzip PtTracker.v$PTTRACKER_VERSION.Linux.zip
+RUN wget https://github.com/bTayFla/PtTracker/releases/download/$PTTRACKER_VERSION/PtTracker.v$PTTRACKER_VERSION.linux.zip
+RUN unzip PtTracker.v$PTTRACKER_VERSION.linux.zip
 
 WORKDIR /app/linux/PtTracker
 RUN chmod +x PtTracker
